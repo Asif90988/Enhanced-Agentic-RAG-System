@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+{% block title %}Query{% endblock %}
+{% block content %}
+<h2>Query Engine</h2>
+<form method="POST">
+  <label for="question">Ask a question:</label><br>
+  <input type="text" id="question" name="question" style="width: 400px;" /><br><br>
+  <input type="submit" value="Ask" />
+</form>
+{% if answer %}
+  <h3>Answer:</h3>
+  <p>{{ answer }}</p>
+{% endif %}
+{% endblock %}
+

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Agentic RAG{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Agentic RAG Dashboard</h1>
+        <nav>
+            <a href="/">Home</a> |
+            <a href="/documents">Documents</a> |
+            <a href="/query">Query</a> |
+            <a href="/history">History</a> |
+            <a href="/export">Export</a>
+        </nav>
+    </header>
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+</body>
+</html>
+
